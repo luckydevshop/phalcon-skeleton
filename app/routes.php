@@ -9,7 +9,6 @@
     ));
 
     // there should be a better way to load multiples like this
-
     $router->add("/login", array(
         "controller" => "session",
         "action"     => "login"
@@ -26,11 +25,6 @@
     ));
 
     $router->addResource('Index', '/');
-
-    /*echo "<pre>";
-    print_r($router);
-    echo "</pre>";
-    die();*/
 
     $router->notFound(array(
         "controller" => "index",
